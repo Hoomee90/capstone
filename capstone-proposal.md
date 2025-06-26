@@ -10,6 +10,7 @@ MVP:
 - Background
 - Music
 - A basic choice or two
+- Start Screen
 - Other Ren'py basic features such as GUI
 
 Resources to use for MVP:
@@ -20,8 +21,8 @@ Resources to use for MVP:
 Further Features:
 - Sound Effects
 - Longer Story
+- Complex effects like text scrolling
 - More choices
-- Start Screen
 - Custom GUI
 
 Resources to use for further features:
