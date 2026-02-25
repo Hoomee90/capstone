@@ -62,10 +62,32 @@ label start:
     pn """
     This is a story about a brutal world.
 
-    For as long as there have been humans, there have been fairies.
+    For as long as there have been people, there have been fairies. Mindlessly benevolent, they are humanity's partners in exterminating magical monsters known as witches.
+
+    Witches sow delusion and madness, feed and multiply by consuming the souls of those who fall under their sway.
+
+    The greatest defense against them is a clarity of purpose.
+
+    A {color=#d358b3}Prayer{/color}.
+
+    Those with exceptionally strong desires may be visited by a fairy. If they choose it, they receive magic capable of granting their Prayer.
+
+    In return they are duty-bound to do battle with witches for the rest of their existence.
+
+    {clear}
+
+    Given their most common demographic, they have come to be known as {color=#d358b3}magical girls{/color}.
+
+    Once upon a time, magical girls could be expected to live entire lives.{w} They had jobs, families. They died of natural causes.
+
+    And then one suburban fourteen year old fancied herself a god and everything went to hell.
     """
-    scene black
-    "My master is strange."
+    scene black with fade
+    s "I'm going to die here."
+    "It's true."
+    "I've survived sixteen years on this earth as a human, and my second month as a magical girl is going to do me in."
+    "I've done my best!{w} My magic makes me no slouch at fighting witches. I'm transparently eager to please. I have a nice smile."
+    "But no magical girl can survive without protection.{w} Either a sorority takes you in or you're driven out of any and every habitable area already claimed as territory."
     scene bg selectionroom with fade
     show kotone neutral
     "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
@@ -83,10 +105,10 @@ label start:
 
     hide kotone with dissolve
     show veterangroup at slide_right_to_center
-    "Magical girls don't mix with human children, or at least human girls.{w} Inter Office compact:{w} no spilling secrets, no influencing magic."
+    "Magical girls don't mix with human children, or at least human girls.{w} Inter sorority compact:{w} no spilling secrets, no influencing Prayers."
     "But I had always been the exception.{w} Pity, on me or my mother, backed up by confidence in the facts."
     show veterangroup at bounce
-    "{i}Products of magic can't be given magical girl status.{/i}"
+    "{i}Products of Prayers can't be given magical girl status.{/i}"
     show veterangroup at bounce
     extend "{i} Fairies won't even register them as human.{/i}"
 
@@ -106,7 +128,7 @@ label start:
     s "Okay."
     "Pointless word.{w} Pointless nod."
     "She doesn't grasp my arm or my face, doesn't go to check if my teeth are all intact.{w} I only get one more sentence before she's turned away."
-    k @ speak "You don't see many flowers offworld."
+    k @ speak "You don't see many flowers here."
     "She must mean the cluster of snapdragons on the lapel of my three-piece suit.{w} She moves quick, and I find myself feeling strangely sick we leave this place behind."
     "Out of the fire, into the frying pan."
     s "{i}Hey mom... was this what it was like for you?{/i}"
