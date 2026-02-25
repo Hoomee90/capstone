@@ -82,30 +82,34 @@ label start:
 
     And then one suburban fourteen year old fancied herself a god and everything went to hell.
     """
+
     scene black with fade
     s "I'm going to die here."
     "It's true."
     "I've survived sixteen years on this earth as a human, and my second month as a magical girl is going to do me in."
     "I've done my best!{w} My magic makes me no slouch at fighting witches. I'm transparently eager to please. I have a nice smile."
     "But no magical girl can survive without protection.{w} Either a sorority takes you in or you're driven out of any and every habitable area already claimed as territory."
+    "Rigid structure is the only thing that can drive back the teeming masses of witches which live on the margins of society."
+    "So it goes: obedience training, selection, pledge period, full membership."
+    "The second step? Never happening for me."
     scene bg selectionroom with fade
-    show kotone neutral
-    "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
-    "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
-    show kotone look
-    "The second thing I notice is that she actually looks my way."
-    "There's an open curiosity there, contrast to every woman who's eyed me before—{w}this selection or the previous."
-    show kotone submissive at slide_to_left
-    show veterangroup at fade_in_right, bounce
+    # show kotone neutral
+    # "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
+    # "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
+    # show kotone look
+    # "The second thing I notice is that she actually looks my way."
+    # "There's an open curiosity there, contrast to every woman who's eyed me before—{w}this selection or the previous."
+    # show kotone submissive at slide_to_left
+    show veterangroup at bounce
     "{i}Abomination.{/i}"
     show veterangroup at bounce
     extend "{i} Akane's afterbirth.{/i}"
     show veterangroup at bounce
     extend "{i} Double-cursed thing.{/i}"
 
-    hide kotone with dissolve
-    show veterangroup at slide_right_to_center
-    "Magical girls don't mix with human children, or at least human girls.{w} Inter sorority compact:{w} no spilling secrets, no influencing Prayers."
+    # hide kotone with dissolve
+    # show veterangroup at slide_right_to_center
+    "Magical girls don't mix with human children, or at least human girls.{w} Inter-sorority compact:{w} no spilling secrets, no influencing Prayers."
     "But I had always been the exception.{w} Pity, on me or my mother, backed up by confidence in the facts."
     show veterangroup at bounce
     "{i}Products of Prayers can't be given magical girl status.{/i}"
@@ -117,10 +121,11 @@ label start:
     "I should've known, then, that nobody would want me.{w} That nobody liked a know-it-all, and nobody cared for my mother enough to be charmed by how similar I look."
     "But at the time what had matter was this:{w} my mother was dead, and the pity was quickly drying up."
     "Out on the street or off with my head—but a fairy came to me that night.{w} There was only one way forward."
-    "One winnowing, two. I am a dead girl walking. I always have been."
-
+    "As if anyone would want a curse like me.{w} I am a dead girl walking. I always have been."
     hide veterangroup with dissolve
     show kotone look with dissolve
+    "Until."
+
     "Until this woman, mousy and timorous. Until her."
     k @ speak "My name is Kotone.{w} I'm choosing you."
     s "I—"
