@@ -28,6 +28,11 @@ define s = Character('Suki',
     color="#1ca692",
     who_outlines=[ (2, "#0b4c45") ])
 
+define tr = Character('???',
+    kind=template,
+    color="#bf7e1c",
+    who_outlines=[ (2, "#4c2e0b") ])
+
 image ctc:
     "gui/arrow.png"
     linear 0.5 alpha 1.0
@@ -60,7 +65,7 @@ label start:
 
     scene bg prologuebg
     pn """
-    This is a story about a brutal world.
+    This is a story about a cruel world.
 
     For as long as there have been people, there have been fairies. Mindlessly benevolent, they are humanity's partners in exterminating magical monsters known as witches.
 
@@ -84,31 +89,31 @@ label start:
     """
 
     scene black with fade
+    tr "Congratulations girls."
+    tr "Your training is officially over.{w} Welcome to rush week!"
+    tr "Where, with any luck, a senior member of a sorority will choose you as pledge."
+    tr "If you're among the thirty percent that survived this long, you're more than fit to do your duty.{w} This way now."
+    "Back straight, uniform freshly conjured, hands still."
+
+    scene bg selectionroom with fade
     s "I'm going to die here."
     "It's true."
-    "I've survived sixteen years on this earth as a human, and my second month as a magical girl is going to do me in."
-    "I've done my best!{w} My magic makes me no slouch at fighting witches. I'm transparently eager to please. I have a nice smile."
+    "I've survived sixteen years on this earth as a human, and just a fraction of that time as a magical girl is going to do me in."
+    "I've done my best!{w} My magic makes me no slouch at fighting witches.{w} I'm transparently eager to please. I have a nice smile."
     "But no magical girl can survive without protection.{w} Either a sorority takes you in or you're driven out of any and every habitable area already claimed as territory."
-    "Rigid structure is the only thing that can drive back the teeming masses of witches which live on the margins of society."
-    "So it goes: obedience training, selection, pledge period, full membership."
-    "The second step? Never happening for me."
-    scene bg selectionroom with fade
-    # show kotone neutral
-    # "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
-    # "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
-    # show kotone look
-    # "The second thing I notice is that she actually looks my way."
-    # "There's an open curiosity there, contrast to every woman who's eyed me before—{w}this selection or the previous."
-    # show kotone submissive at slide_to_left
-    show veterangroup at bounce
-    "{i}Abomination.{/i}"
-    show veterangroup at bounce
-    extend "{i} Akane's afterbirth.{/i}"
-    show veterangroup at bounce
-    extend "{i} Double-cursed thing.{/i}"
+    "There past four months have been dedicated to scrubbing the hundred or so of us into clean slates."
+    "Negate all you once were.{w} Allow yourself to molded into something more fitting."
+    "I'm perfectly capable of forgetting the past.{w} The issue lies with the inability of the past to forget {i}me{/i}."
+    "Dozens of girls and young women filter in, colorful regalia with no centralizing theme."
+    "Floofy dresses. Childish embellishments. Hearts and bows and dazzling colors."
+    "Our future masters{w} I already know what they'll say about me."
 
-    # hide kotone with dissolve
-    # show veterangroup at slide_right_to_center
+    show veterangroup at center, bounce
+    "{i}Abomination.{/i}"
+    show veterangroup at center, bounce
+    extend "{i} Akane's afterbirth.{/i}"
+    show veterangroup at center, bounce
+    extend "{i} Double-cursed thing.{/i}"
     "Magical girls don't mix with human children, or at least human girls.{w} Inter-sorority compact:{w} no spilling secrets, no influencing Prayers."
     "But I had always been the exception.{w} Pity, on me or my mother, backed up by confidence in the facts."
     show veterangroup at bounce
@@ -119,14 +124,18 @@ label start:
     "Except fairies get stranger every year.{w} Contact with humanity makes them ill.{w} I grew up hearing stories."
     "I grew up hearing everything."
     "I should've known, then, that nobody would want me.{w} That nobody liked a know-it-all, and nobody cared for my mother enough to be charmed by how similar I look."
-    "But at the time what had matter was this:{w} my mother was dead, and the pity was quickly drying up."
+    "But back then what had matter was this:{w} my mother was dead, and the pity was quickly drying up."
     "Out on the street or off with my head—but a fairy came to me that night.{w} There was only one way forward."
     "As if anyone would want a curse like me.{w} I am a dead girl walking. I always have been."
     hide veterangroup with dissolve
-    show kotone look with dissolve
-    "Until."
 
-    "Until this woman, mousy and timorous. Until her."
+    "Until.{w} Until a girl comes up to me, headless of her peers."
+    show kotone neutral with dissolve
+    "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
+    "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
+    show kotone look
+    "She doesn't say anything, just stares.{w} She might be using some sort of magic, but the air is so thick with it in this room I can't tell."
+
     k @ speak "My name is Kotone.{w} I'm choosing you."
     s "I—"
     "I stop. I don't actually have anything to say."
@@ -144,7 +153,7 @@ label start:
     "It's not unfamiliar. There had only ever been one person who wanted to hear me speak."
     "Without a proper education, my elocution is subpar.{w} Mine are the awkward syllables and stunted vocabulary of a tongue built from propaganda pieces and eavesdropped street gossip."
     "When I try, my words fall as a disordered mess. Too fast, too emphatic."
-    "The life of the always-underfoot had no place for friends or peers to converse with."
+    "The life of the always-underfoot had no place for friends or peers to converse with.{w} As is natural."
     "So it comes to a shock when, out of the blue, my master addresses me."
 
     show kotone speak
@@ -154,7 +163,7 @@ label start:
     "I look up from the game I'd made of bouncing a tiny mass of magical force between my fingers."
     s "Y-yes?"
     k @ speak "Good."
-    "She goes back to annotating the map projected on the air above her desk.{w} Is that it?"
+    "She goes back to considering the spreadsheet projected on the air above her desk.{w} Is that it?"
     "I bite my lip, try and remind myself what the expectations are.{w}{i} Obedience.{w} Faithfulness.{w} Perseverance{/i}{nw}"
     s "That's all?! Don't you want {i}anything{/i} from me?"
 
