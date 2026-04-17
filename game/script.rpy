@@ -96,17 +96,18 @@ label start:
     "Back straight, uniform freshly conjured, hands still."
 
     scene bg selectionroom with fade
+    play music "murmur.ogg"
     s "I'm going to die here."
     "It's true."
     "I've survived sixteen years on this earth as a human, and just a fraction of that time as a magical girl is going to do me in."
     "I've done my best!{w} My magic makes me no slouch at fighting witches.{w} I'm transparently eager to please. I have a nice smile."
     "But no magical girl can survive without protection.{w} Either a sorority takes you in or you're driven out of any and every habitable area already claimed as territory."
-    "There past four months have been dedicated to scrubbing the hundred or so of us into clean slates."
+    "To that end, these past four months have been dedicated to scrubbing the hundred or so of us into clean slates."
     "Negate all you once were.{w} Allow yourself to molded into something more fitting."
     "I'm perfectly capable of forgetting the past.{w} The issue lies with the inability of the past to forget {i}me{/i}."
     "Dozens of girls and young women filter in, colorful regalia with no centralizing theme."
     "Floofy dresses. Childish embellishments. Hearts and bows and dazzling colors."
-    "Our future masters{w} I already know what they'll say about me."
+    "Our future masters.{w} I already know what they'll say about me."
 
     show veterangroup at center, bounce
     "{i}Abomination.{/i}"
@@ -134,8 +135,7 @@ label start:
     "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
     "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
     show kotone look
-    "She doesn't say anything, just stares.{w} She might be using some sort of magic, but the air is so thick with it in this room I can't tell."
-
+    "She doesn't say anything, just stares.{w} She might be activating some sort of magic, but the air is so thick with it in this room I can't tell."
     k @ speak "My name is Kotone.{w} I'm choosing you."
     s "I—"
     "I stop. I don't actually have anything to say."
@@ -143,28 +143,36 @@ label start:
     "Pointless word.{w} Pointless nod."
     "She doesn't grasp my arm or my face, doesn't go to check if my teeth are all intact.{w} I only get one more sentence before she's turned away."
     k @ speak "You don't see many flowers here."
-    "She must mean the cluster of snapdragons on the lapel of my three-piece suit.{w} She moves quick, and I find myself feeling strangely sick we leave this place behind."
+    "She must mean the cluster of snapdragons on the lapel of my three-piece suit.{w} She moves quick, and I find myself feeling sick we leave this place behind."
     "Out of the fire, into the frying pan."
     s "{i}Hey mom... was this what it was like for you?{/i}"
+    stop music
 
     scene bg koquarters with fade
+    "My work begins immediately."
+    # "My master spends my first week studiously ignoring me.{w} I'm relegated to the corners of rooms, afterthought, unloved doll. Her fellow magical girls seem keen to do the same."
+    # "It's not unfamiliar. There had only ever been one person who wanted to hear me speak."
+    # "Without a proper education, my elocution is subpar.{w} Mine are the awkward syllables and stunted vocabulary of a tongue built from propaganda pieces and eavesdropped street gossip."
+    # "When I try, my words fall as a disordered mess. Too fast, too emphatic."
+    # "The life of the always-underfoot had no place for friends or peers to converse with.{w} As is natural."
+    # "So it comes to a shock when, out of the blue, my master addresses me."
 
-    "My master spends my first week studiously ignoring me.{w} I'm relegated to the corners of rooms, afterthought, unloved doll. Her fellow magical girls seem keen to do the same." 
-    "It's not unfamiliar. There had only ever been one person who wanted to hear me speak."
-    "Without a proper education, my elocution is subpar.{w} Mine are the awkward syllables and stunted vocabulary of a tongue built from propaganda pieces and eavesdropped street gossip."
-    "When I try, my words fall as a disordered mess. Too fast, too emphatic."
-    "The life of the always-underfoot had no place for friends or peers to converse with.{w} As is natural."
-    "So it comes to a shock when, out of the blue, my master addresses me."
-
-    show kotone speak
-    k "Have you been settling in okay?"
-    show kotone neutral
-    "Silence stretches on before I realize it's me she's asking."
-    "I look up from the game I'd made of bouncing a tiny mass of magical force between my fingers."
-    s "Y-yes?"
-    k @ speak "Good."
-    "She goes back to considering the spreadsheet projected on the air above her desk.{w} Is that it?"
-    "I bite my lip, try and remind myself what the expectations are.{w}{i} Obedience.{w} Faithfulness.{w} Perseverance{/i}{nw}"
-    s "That's all?! Don't you want {i}anything{/i} from me?"
+    # show kotone speak
+    # k "Have you been settling in okay?"
+    # show kotone neutral
+    # "Silence stretches on before I realize it's me she's asking."
+    # "I look up from the game I'd made of bouncing a tiny mass of magical force between my fingers."
+    # s "Y-yes?"
+    # k @ speak "Good."
+    # "She goes back to considering the spreadsheet projected on the air above her desk.{w} Is that it?"
+    # "I bite my lip, try and remind myself what the expectations are.{w}{i} Obedience.{w} Faithfulness.{w} Perseverance{/i}{nw}"
+    # s "That's all?! Don't you want {i}anything{/i} from me?"
+    # s "I'm aware weren't not exactly on the front lines here, but I went through the same training as everyone else.{w} I have use!"
+    # "Her expression doesn't change."
+    # k @ speak "I'm sure you do."
+    # "Is this a test?{w} If so, I'm surely failing.{w} I grit my teeth."
+    # s "The pledge system exists to ensure the loyalty and efficacy of magical girls.{w} The Margins are only held stable because—"
+    # k @ speak "—Each and every girl knows her place and accepts it with open arms.{w} Pledge or veteran, life or death, it is eternal."
+    # "She finishes the passage for me."
 
     return
