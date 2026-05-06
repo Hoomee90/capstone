@@ -88,6 +88,7 @@ label start:
     And then one suburban fourteen year old fancied herself a god and everything went to hell.
     """
 
+    stop music fadeout 1.0
     scene black with fade
     tr "Congratulations girls."
     tr "Your training is officially over.{w} Welcome to rush week!"
@@ -96,7 +97,7 @@ label start:
     "Back straight, uniform freshly conjured, hands still."
 
     scene bg selectionroom with fade
-    play music "murmur.ogg"
+    play music "murmur.ogg" fadeout 0
     s "I'm going to die here."
     "It's true."
     "I've survived sixteen years on this earth as a human, and just a fraction of that time as a magical girl is going to do me in."
@@ -148,8 +149,8 @@ label start:
     s "{i}Hey mom... was this what it was like for you?{/i}"
     stop music
 
-    scene bg koquarters with fade
-    "My work begins immediately."
+    # scene bg koquarters with fade
+    # "My work begins immediately."
     # "My master spends my first week studiously ignoring me.{w} I'm relegated to the corners of rooms, afterthought, unloved doll. Her fellow magical girls seem keen to do the same."
     # "It's not unfamiliar. There had only ever been one person who wanted to hear me speak."
     # "Without a proper education, my elocution is subpar.{w} Mine are the awkward syllables and stunted vocabulary of a tongue built from propaganda pieces and eavesdropped street gossip."
