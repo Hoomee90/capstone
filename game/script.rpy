@@ -97,7 +97,7 @@ label start:
     "Back straight, uniform freshly conjured, hands still."
 
     scene bg selectionroom with fade
-    play music "murmur.ogg" fadeout 0
+    play music "murmur.ogg" volume 0.5
     s "I'm going to die here."
     "It's true."
     "I've survived sixteen years on this earth as a human, and just a fraction of that time as a magical girl is going to do me in."
@@ -111,6 +111,7 @@ label start:
     "Our future masters.{w} I already know what they'll say about me."
 
     show veterangroup at center, bounce
+    play sound "giggle.wav" volume 0.3
     "{i}Abomination.{/i}"
     show veterangroup at center, bounce
     extend "{i} Akane's afterbirth.{/i}"
@@ -132,6 +133,7 @@ label start:
     hide veterangroup with dissolve
 
     "Until.{w} Until a girl comes up to me, headless of her peers."
+    play music "kotones-theme.ogg" fadein 1.0
     show kotone neutral with dissolve
     "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
     "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
@@ -144,7 +146,7 @@ label start:
     "Pointless word.{w} Pointless nod."
     "She doesn't grasp my arm or my face, doesn't go to check if my teeth are all intact.{w} I only get one more sentence before she's turned away."
     k @ speak "You don't see many flowers here."
-    "She must mean the cluster of snapdragons on the lapel of my three-piece suit.{w} She moves quick, and I find myself feeling sick we leave this place behind."
+    "She must mean the cluster of snapdragons on the lapel of my suit.{w} She moves quick, and I find myself feeling sick we leave this place behind."
     "Out of the fire, into the frying pan."
     s "{i}Hey mom... was this what it was like for you?{/i}"
     stop music
