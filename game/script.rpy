@@ -40,6 +40,8 @@ image ctc:
     repeat 
 
 image black = "#000"
+image bg selectionroom = "selection-room.webp"
+image bg prologue = "prologue.webp"
 
 transform bounce:
     pause .1
@@ -63,7 +65,7 @@ transform slide_right_to_center:
 
 label start:
 
-    scene bg prologuebg
+    scene bg prologue
     pn """
     This is a story about a cruel world.
 
@@ -94,7 +96,7 @@ label start:
     tr "Your training is officially over.{w} Welcome to rush week!"
     tr "Where, with any luck, a senior member of a sorority will choose you as pledge."
     tr "If you're among the thirty percent that survived this long, you're more than fit to do your duty.{w} This way now."
-    "Back straight, uniform freshly conjured, hands still."
+    "Back straight, uniform freshly conjured, hands still.{w} Out into the courtyard we go."
 
     scene bg selectionroom with fade
     play music "murmur.ogg" volume 0.5
@@ -146,7 +148,7 @@ label start:
     "Pointless word.{w} Pointless nod."
     "She doesn't grasp my arm or my face, doesn't go to check if my teeth are all intact.{w} I only get one more sentence before she's turned away."
     k @ speak "You don't see many flowers here."
-    "She must mean the cluster of snapdragons on the lapel of my suit.{w} She moves quick, and I find myself feeling sick we leave this place behind."
+    "She must mean the cluster of snapdragons on the lapel of my suit.{w} She moves quick, and I find myself feeling sick as I follow her out the gate."
     "Out of the fire, into the frying pan."
     s "{i}Hey mom... was this what it was like for you?{/i}"
     stop music
