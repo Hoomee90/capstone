@@ -40,8 +40,9 @@ image ctc:
     repeat 
 
 image black = "#000"
-image bg selectionroom = "selection-room.webp"
 image bg prologue = "prologue.webp"
+image bg prologuewish = "prologue-after-prayer.webp"
+image bg selectionroom = "selection-room.webp"
 
 transform bounce:
     pause .1
@@ -87,10 +88,18 @@ label start:
 
     Once upon a time, magical girls could be expected to live entire lives.{w} They had jobs, families. They died of natural causes.
 
-    And then one suburban fourteen year old fancied herself a god and everything went to hell.
+    Then one suburban fourteen year old fancied herself a god... 
     """
-
-    stop music fadeout 1.0
+    # window auto False
+    # scene bg prologuewish with vpunch
+    # window auto True
+    window hide
+    stop music
+    play sound "shatter.wav" volume 0.1
+    scene bg prologuewish with vpunch
+    pn "and everything went to hell."
+    
+    # stop music fadeout 1.0
     scene black with fade
     tr "Congratulations girls."
     tr "Your training is officially over.{w} Welcome to rush week!"
@@ -135,7 +144,7 @@ label start:
     hide veterangroup with dissolve
 
     "Until.{w} Until a girl comes up to me, headless of her peers."
-    play music "kotones-theme.ogg" fadein 1.0
+    play music "kotones-theme.ogg" fadein 0.3
     show kotone neutral with dissolve
     "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
     "Her posture, too. Contorted even smaller, she's a circus act of avoiding attention."
