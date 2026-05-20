@@ -38,7 +38,7 @@ Audio from {a=https://freesound.org/}freesound.org{/a}. Images from {a=https://w
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Capstone"
+define build.name = "magical-girl-story"
 
 
 ## Sounds and music ############################################################
