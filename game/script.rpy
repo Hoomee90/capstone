@@ -101,7 +101,7 @@ label start:
     
     # stop music fadeout 1.0
     scene black with fade
-    tr "Congratulations girls."
+    tr "Congratulations, girls."
     tr "Your training is officially over.{w} Welcome to rush week!"
     tr "Where, with any luck, a senior member of a sorority will choose you as pledge."
     tr "If you're among the thirty percent that survived this long, you're more than fit to do your duty.{w} This way now."
