@@ -44,6 +44,12 @@ image bg prologue = "prologue.webp"
 image bg prologuewish = "prologue-after-prayer.webp"
 image bg selectionroom = "selection-room.webp"
 
+image veterangroup = "veterans.png"
+
+image kotone neutral = "ko.png"
+image kotone look = "kolook.png"
+image kotone speak = "kospeak.png"
+
 transform bounce:
     pause .1
     yoffset 0
@@ -52,15 +58,12 @@ transform bounce:
     easein .175 yoffset -4
     easeout .175 yoffset 0
     yoffset 0
-
 transform slide_to_left:
     easein 0.4 xalign 0.3
-
 transform fade_in_right:
     xalign 0.7
     alpha 0.0
     linear 0.4 alpha 1.0
-
 transform slide_right_to_center:
     easein 0.4 xalign 0.5
 
@@ -138,7 +141,7 @@ label start:
     "Except fairies get stranger every year.{w} Contact with humanity makes them ill.{w} I grew up hearing stories."
     "I grew up hearing everything."
     "I should've known, then, that nobody would want me.{w} That nobody liked a know-it-all, and nobody cared for my mother enough to be charmed by how similar I look."
-    "But back then what had matter was this:{w} my mother was dead, and the pity was quickly drying up."
+    "But back then what mattered was this:{w} my mother was dead, and the pity was quickly drying up."
     "Out on the street or off with my head—but a fairy came to me that night.{w} There was only one way forward."
     "As if anyone would want a curse like me.{w} I am a dead girl walking. I always have been."
     hide veterangroup with dissolve
@@ -157,6 +160,7 @@ label start:
     "Pointless word.{w} Pointless nod."
     "She doesn't grasp my arm or my face, doesn't go to check if my teeth are all intact.{w} I only get one more sentence before she's turned away."
     k @ speak "You don't see many flowers here."
+    show kotone neutral
     "She must mean the cluster of snapdragons on the lapel of my suit.{w} She moves quick, and I find myself feeling sick as I follow her out the gate."
     "Out of the fire, into the frying pan."
     s "{i}Hey mom... was this what it was like for you?{/i}"
