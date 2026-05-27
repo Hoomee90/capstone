@@ -52,12 +52,12 @@ image kotone speak = "kospeak.png"
 
 transform bounce:
     pause .1
-    yoffset 0
-    easein .175 yoffset -10
-    easeout .175 yoffset 0
-    easein .175 yoffset -4
-    easeout .175 yoffset 0
-    yoffset 0
+    yoffset 10
+    easein .175 yoffset 0
+    easeout .175 yoffset 10
+    easein .175 yoffset 6
+    easeout .175 yoffset 10
+    yoffset 10
 transform slide_to_left:
     easein 0.4 xalign 0.3
 transform fade_in_right:
@@ -118,14 +118,15 @@ label start:
     "I've done my best!{w} My magic makes me no slouch at fighting witches.{w} I'm transparently eager to please. I have a nice smile."
     "But no magical girl can survive without protection.{w} Either a sorority takes you in or you're driven out of any and every habitable area already claimed as territory."
     "To that end, these past four months have been dedicated to scrubbing the hundred or so of us into clean slates."
-    "Negate all you once were.{w} Allow yourself to molded into something more fitting."
+    "Negate all you once were.{w} Allow yourself to be molded into something more fitting."
     "I'm perfectly capable of forgetting the past.{w} The issue lies with the inability of the past to forget {i}me{/i}."
     "Dozens of girls and young women filter in, colorful regalia with no centralizing theme."
     "Floofy dresses. Childish embellishments. Hearts and bows and dazzling colors."
     "Our future masters.{w} I already know what they'll say about me."
 
-    show veterangroup at center, bounce
     play sound "giggle.wav" volume 0.3
+    show veterangroup at center, bounce
+    with dissolve 
     "{i}Abomination.{/i}"
     show veterangroup at center, bounce
     extend "{i} Akane's afterbirth.{/i}"
@@ -146,7 +147,7 @@ label start:
     "As if anyone would want a curse like me.{w} I am a dead girl walking. I always have been."
     hide veterangroup with dissolve
 
-    "Until.{w} Until a girl comes up to me, headless of her peers."
+    "Until.{w} Until a girl comes up to me, heedless of her peers."
     play music "kotones-theme.ogg" fadein 0.3
     show kotone neutral with dissolve
     "The first thing I notice is how I tower over her.{w} I've always been tall, but she's {i}tiny{/i}."
